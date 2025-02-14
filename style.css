@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+  animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+  0% { color: red; }
+  20% { color: orange; }
+  40% { color: yellow; }
+  60% { color: green; }
+  80% { color: blue; }
+  100% { color: violet; }
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  animation: buttonFlash 1s infinite alternate;
+  transition: transform 0.2s;
+}
+
+@keyframes buttonFlash {
+  0% { background-color: red; color: white; }
+  25% { background-color: yellow; color: black; }
+  50% { background-color: lime; color: white; }
+  75% { background-color: blue; color: white; }
+  100% { background-color: violet; color: white; }
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+  font-size: 2rem;
+  color: #ffcc00;
+  font-weight: bold;
+  margin-top: 20px;
+}
